@@ -432,11 +432,121 @@
 // console.log(addTotal(6));
 
 
-let total = 0;
+// let total = 0;
 
-function addTotal(num){
-  let newTotal = total;
-  newTotal += num;
+// function addTotal(num){
+//   let newTotal = total;
+//   newTotal += num;
+// }
+
+// console.log(addTotal(12));
+
+
+// function outer() {
+//   let name = "Ayush"; // outer variable
+
+//   function inner() {
+//     console.log("Hello " + name);
+//   }
+
+//   return inner;
+// }
+
+// const greet = outer(); // outer() runs and returns inner()
+// greet(); // Output: Hello Ayush ✅
+
+
+// function abcd(){
+//   let val = 2;
+//   return function(){
+//     console.log(val);
+//     }
+// }
+
+// abcd()();
+
+// (function abc(){
+//   console.log("hello");
+// })();
+
+
+// abc();
+// function abc(){
+//   console.log("hello");
+// }
+
+
+// function bmi(weight, height){
+//   return weight / (height * height);
+// }
+
+// console.log(bmi(55, 1.7).toFixed(2));
+
+
+
+// function discountCalculator(discount){
+//   return function(price){
+//     return price - price * (discount / 100);
+//   }
+// };
+
+// let discounter = discountCalculator(10);
+// console.log(discounter(1000));
+
+
+// function abc(){
+//   let count = 0;
+//   return function(){
+//     count++;
+//     return count;
+//   }
+// }
+
+// let c = abc();
+// console.log(c());
+// console.log(c());
+// console.log(c());
+
+
+// function abcd(val){
+//   return val * 2;
+// }
+
+// console.log(abcd(5));
+
+
+// (function abcde(){
+//    const password = "secret password";
+//    console.log(password); 
+// })();
+
+
+// let abc = () => {
+//   return "ayush you are going to become rich and ulta successful famosous person with in 2 years";
+// }
+
+// console.log(abc());
+
+
+greet();
+function greet(){  //works due to function hoisting
+
 }
 
-console.log(addTotal(12));
+
+greet();
+let greet = function(){  //does not work due to function expression
+
+}
+
+greet(); // ✅ Works
+
+function greet() {      // Function Declaration
+  console.log("Hello!");
+}
+
+greet(); // ❌ Error: Cannot access 'greet' before initialization
+
+let greet = function() {  // Function Expression
+  console.log("Hello!");
+};
