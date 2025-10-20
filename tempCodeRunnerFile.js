@@ -1,2 +1,2 @@
 
-// function abc(a,b,c){
+// let arr1 = [1,2,3];

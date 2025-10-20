@@ -528,25 +528,66 @@
 // console.log(abc());
 
 
-greet();
-function greet(){  //works due to function hoisting
+// greet();
+// function greet(){  //works due to function hoisting
 
-}
+// }
 
 
-greet();
-let greet = function(){  //does not work due to function expression
+// greet();
+// let greet = function(){  //does not work due to function expression
 
-}
+// }
 
-greet(); // ✅ Works
+// greet(); // ✅ Works
 
-function greet() {      // Function Declaration
-  console.log("Hello!");
-}
+// function greet() {      // Function Declaration
+//   console.log("Hello!");
+// }
 
-greet(); // ❌ Error: Cannot access 'greet' before initialization
+// greet(); //  Error: Cannot access 'greet' before initialization
 
-let greet = function() {  // Function Expression
-  console.log("Hello!");
-};
+// let greet = function() {  // Function Expression
+//   console.log("Hello!");
+// };
+
+// let marks = [90, 85, 78];
+// console.log(marks[1]); // 85
+// marks[2] = 80; // Update index 2
+
+
+
+// let arr = [1, 2, 3, 4];
+
+// arr.push(5); // Add to end
+// arr.pop(); // Remove last
+
+// arr.shift(); // Remove first
+// arr.unshift(0); // Add to start
+
+// arr.splice(1, 2); // Remove 2 items starting at index 1
+// arr.reverse(); // Reverse order
+
+// let arr = [2,3,4,1,5];
+// arr.splice(2,2);
+// console.log(arr);
+//output: [2, 3, 5]
+
+// let newArr = arr.slice(0,4);
+// console.log(newArr);
+
+// let arr = [1,2,3,4,5];
+// let newArr = arr.slice(1,3);
+// console.log(newArr);
+// console.log(arr);
+// //output: [2, 3]
+
+// let arr1 = [1,2,3];
+// arr1.reverse();
+// console.log(arr1);
+
+let arr1 = [5,3,1,4,2];
+let arr = arr1.sort(function(a,b){
+  return b-a; //descending order
+})
+console.log(arr);
