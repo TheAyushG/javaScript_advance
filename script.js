@@ -586,8 +586,158 @@
 // arr1.reverse();
 // console.log(arr1);
 
-let arr1 = [5,3,1,4,2];
-let arr = arr1.sort(function(a,b){
-  return b-a; //descending order
-})
-console.log(arr);
+// let arr1 = [5,3,1,4,2];
+// let arr = arr1.sort(function(a,b){
+//   return b-a; //descending order
+// })
+// console.log(arr);
+
+// let arr = [12,32,45,65,43];
+// arr.forEach(function(val){
+//   console.log(val-2);
+// })
+
+
+// let arr = [13,16,23,44,52];
+// let newArr = arr.map(function(val){
+//    if(val > 20) return val;
+// })
+
+// let arr = [43,4,23,12,65,32];
+// let newArr = arr.filter(function(val){
+//   if(val > 20) return true;
+// })
+// console.log(newArr);
+// //output: [43, 23, 65, 32]
+
+// let arr = [1,2,3,4,5,6];
+// let sum = arr.reduce(function(acc, val){
+//   return acc + val;
+// }, 0);
+
+// console.log(sum);
+
+// let arr = [1,2,3,4,5,6];
+// let v1 = arr.find(function(val){
+//   return val > 4;
+// })
+
+// console.log(v1);
+// output: 5
+
+// let arr = [1,2,3,4,5,6];
+// let result = arr.some(function(val){
+//   if (val > 5) return true;
+// })
+// console.log(result);
+
+// let result = arr.every(val => val > 20);
+// console.log(result);
+
+
+// let [a,b,c, ...rest] = arr;
+// console.log(arr);
+// // output: [14, 32, 13, 23, 53, 36]
+
+// let arr = [14,32,13,23,53,36];
+// let arr2 = [...arr];
+// arr2.pop();
+// arr2.push(122,1222);
+// console.log(arr2);
+
+
+// fruit.push("mango");
+// fruit.unshift("Pineapple");
+// console.log(fruit);
+
+
+// let fruit = ["apple", "banana"];
+// fruit.splice(1,0,"orange","grape");
+
+// let arr = [1,2,3,4,5];
+// arr.pop();
+// arr.shift();
+// console.log(arr);
+
+// Splice Example
+// let arr = [1,2,3,4,5];
+// arr.splice(1,2);
+// console.log(arr);
+// // output: [1, 4, 5]
+
+// let arr = ["apple", "banana", "cherry"];
+// arr.splice(1, 0, "orange", "grape");
+// console.log(arr);
+// // output: ["apple", "orange", "grape", "banana", "cherry"]
+
+// let items = [10, 20, 30, 40, 50];
+// items.splice(1,2,100,200);
+// console.log(items);
+// // output: [20, 30, 40]
+
+
+// let arr = [1, 2, 3, 4, 5];
+// arr.splice(1, 2, 9, 10); 
+// console.log(arr); // [1, 9, 10, 4, 5]
+
+
+// let arr = [3,4,1,5,6];
+// let arr1 = arr.map(function(val){
+//   return val * val;
+// })
+// console.log(arr1);
+// // output: [9, 16, 1, 25, 36]
+
+// let arr = [2,31,42,5,6];;
+// let newArr = arr.filter(function(val){
+//   return val > 10;
+// })
+// console.log(newArr);
+// // output: [31, 42]
+
+// let arr = [11,23,31,43,25];
+// let sum = arr.reduce(function(acc, val){
+//   return acc + val;
+// }, 0);
+// console.log(sum);
+// // output: 133
+
+// let arr = [12,23,5,3,56];
+// let result = arr.find(val => val < 10)
+// console.log(result);
+
+// let score = [12,23,34,45,56];
+// let res = score.some(val => val > 50);
+// console.log(res);
+
+// let score1 = [12,23,34,45,56];
+// let res1 = score1.some(function(val){
+//   return val > 40;
+// })
+// console.log(res1);
+
+// let arr = [12,22,34,46,56];
+// let res = arr.every(function(val){
+//   return val % 2 === 0;
+// })
+// console.log(res);
+// // output: true
+
+// let FullName = ["ayush", "gurjar"]
+// let [firstName, lastName] = FullName;
+// console.log(FullName);
+
+// let a = [1,2];
+// let b = [19,4];
+// let c = [...a, ...b];
+// console.log(c);
+// // output: [1, 2, 19, 4]
+
+// let countries = ["USA", "UK", "Canada"];
+// let newCountries = ["India", ...countries];
+// console.log(newCountries);
+// // output: ["India", "USA", "UK", "Canada"]
+
+let arr = [1,2,3];
+let arr2 = [...arr];
+console.log(arr2);
