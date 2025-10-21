@@ -738,6 +738,20 @@
 // console.log(newCountries);
 // // output: ["India", "USA", "UK", "Canada"]
 
-let arr = [1,2,3];
-let arr2 = [...arr];
-console.log(arr2);
+// let arr = [1,2,3];
+// let arr2 = [...arr];
+// console.log(arr2);
+
+// let arr = [1, 2, 3];
+// arr.forEach(num => console.log(num * 2)); 
+// // Output: 2, 4, 6
+
+// let arr = [1, 2, 3];
+// let newArr = arr.map(num => num * 2);
+// console.log(newArr); // [2, 4, 6]
+
+
+let arr = [14, 53, 23, 44, 33];
+arr.sort(function(a,b) => a-b);
+    return b-a;
+console.log(arr);
