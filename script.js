@@ -751,7 +751,230 @@
 // console.log(newArr); // [2, 4, 6]
 
 
-let arr = [14, 53, 23, 44, 33];
-arr.sort(function(a,b) => a-b);
-    return b-a;
-console.log(arr);
+// let arr = [14, 53, 23, 44, 33];
+// arr.sort(function(a,b) => a-b);
+//     return b-a;
+// console.log(arr);
+
+// const user = {
+//     name : "ayush",
+//     age : 20,
+//     address : {
+//         city : "jaipur",
+//         state : "rajasthan",
+//         location : {
+//             lat : 123,
+//             lang : 456,
+//         },
+//     },
+// };
+
+// let {lat, lang} = user.address.location;
+// console.log(lang);
+// student["full name"] = "Ravi Kumar"; // ✅
+// student.course = "JavaScript"; // ✅
+
+// let obj2 = {...obj};
+// let newOne = Object.assign({netWorth : Infinity}, obj);
+// console.log(newOne);
+
+// let obj = {
+//     name: "ayush",
+//     age: 20,
+//     email : "jiaauisj@gmail.com",
+//     address : {
+//         city: "jaipur",
+//     },
+// };
+
+// let obj2 = {...obj};
+// console.log(obj2);
+// obj2.address.city = "delhi";
+// console.log(obj);
+
+
+// let obj = {
+//     name: "ayush",
+//     age: 20,
+//     email : "jiaayush256@gmail.com",
+//     address : {
+//         city: "jaipur",
+//     },
+// };
+
+// let obj2 = JSON.parse(JSON.stringify(obj));
+// console.log(obj2);
+
+// obj2.address.city = "delhi";
+
+// console.log(obj);
+// console.log(obj2);
+
+
+
+// let obj = {
+//   name: "Ayush",
+//   age: 20,
+//   address: {
+//     city: "Jaipur",
+//   },
+// };
+
+// Deep copy using JSON method
+// let obj2 = JSON.parse(JSON.stringify(obj));
+
+// obj2.address.city = "Delhi";
+
+// console.log(obj.address.city); // Jaipur
+// console.log(obj2.address.city); // Delhi
+
+
+// let role = "admin";
+
+// let user = {
+//   name: "Ayush",
+//   address: {
+//     city: "Jaipur"
+//   },
+//   [role] : "salman",
+// };
+
+// console.log(user);
+
+
+// let obj = {
+//     name : "ayush",
+//     age : 20,
+//     isEnroled : true,
+// }
+// console.log(obj);
+
+// let obj = {
+//     name : "ayush",
+//     true : "yes",
+//     20 : "age",
+// }
+
+// console.log(obj[20]);
+
+// let user = {
+//     "first-name" : "ayush",
+// }
+
+// let user1 = user["first-name"];
+// console.log(user1);
+
+
+// let locations = {
+//     city : "jaipur",
+//     coordinates : {
+//         lat : 23.4,
+//         lng : 43.3,
+//     },
+// }
+
+// let a = locations?.coordinates?.lat;
+// console.log(a);
+
+
+// const locations = {
+// city: "jaipur",
+// coordinate: {
+// lat: 23.2,
+// lng: 77.4,
+// },
+// };
+
+// let {city} = locations;
+// let {lat} = locations.coordinate;
+
+// console.log(city);
+// console.log(lat);
+
+
+// let user = {
+//     "first-name" : "ayush",
+// };
+
+// let {"first-name" : firstName} = user;
+
+// console.log(firstName);
+
+
+// let success = {
+//     money : "10 million",
+//     fame : "100 million", 
+// };
+
+// Object.entries(success).forEach(function(val){
+//     console.log(val[0] + ":" + val[1]);
+// })
+
+// const original = {a :1, b :2};
+// const copy = {...original};
+// console.log(copy);
+
+// let obj = {
+//     name : "ayush",
+//     age : 20,
+//     address : {
+//         city : "jaipur",
+//     },
+// };
+
+// let obj2 = JSON.parse(JSON.stringify(obj));
+
+// obj2.address.city = "delhi";
+
+// console.log(obj.address.city);
+// console.log(obj2.address.city);
+
+// const person = {};
+// console.log(person?.profile?.name);
+// //output is undefine
+
+// let age = "x";
+
+// let person = {
+//     name : "ayush",
+//     [age] : 20,
+// }
+
+// console.log(person);
+
+// let a = {score : 90};
+// let b = {...a};
+// b.score = 70;
+
+// let c = JSON.parse(JSON.stringify(a));
+// let 
+// console.log(c.score);
+
+
+
+// let obj = {
+//   name: "Ayush",
+//   address: {
+//     city: "Jaipur"
+//   }
+// };
+
+// let shallowCopy = { ...obj }; // or Object.assign({}, obj)
+// shallowCopy.address.city = "Delhi";
+
+// console.log(obj.address.city); // Output: Delhi (also changes)
+
+
+let obj = {
+  name: "Ayush",
+  address: {
+    city: "Jaipur"
+  }
+};
+
+// Deep copy using structuredClone (modern method)
+let deepCopy = structuredClone(obj);
+
+deepCopy.address.city = "Delhi";
+
+console.log(obj.address.city); // Output: Jaipur (no change)
