@@ -1039,5 +1039,5 @@ let a = document.querySelector("a");
 a.href = "https://www.google.com";
 
 
-50 lpa plus in tech job with in 2 year
-100 coror net worth by 25 
+// 50 lpa plus in tech job with in 2 year
+// 100 coror net worth by 25 
