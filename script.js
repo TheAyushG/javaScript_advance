@@ -965,16 +965,79 @@
 // console.log(obj.address.city); // Output: Delhi (also changes)
 
 
-let obj = {
-  name: "Ayush",
-  address: {
-    city: "Jaipur"
-  }
-};
+// let obj = {
+//   name: "Ayush",
+//   address: {
+//     city: "Jaipur"
+//   }
+// };
 
-// Deep copy using structuredClone (modern method)
-let deepCopy = structuredClone(obj);
+// // Deep copy using structuredClone (modern method)
+// let deepCopy = structuredClone(obj);
 
-deepCopy.address.city = "Delhi";
+// deepCopy.address.city = "Delhi";
 
-console.log(obj.address.city); // Output: Jaipur (no change)
+// console.log(obj.address.city); // Output: Jaipur (no change)
+
+
+// let abcd = document.getElementById("abcd");
+// console.log(abcd);
+
+// let abcd = document.getElementsByClassName("abcd");
+// console.log(abcd);
+
+// let abcd = document.querySelector("h1");
+// console.dir(abcd);
+
+let abcd = document.querySelectorAll("h1");
+console.dir(abcd);
+
+
+
+
+{/* <p class="text">First</p>
+<p class="text">Second</p>
+<script>
+  let elements = document.getElementsByClassName("text");
+  console.log(elements); // HTMLCollection of 2 <p> elements
+</script> */}
+
+
+{/* <p class="text">Hello</p>
+<p class="text">World</p>
+<script>
+  let el = document.querySelector(".text");
+  console.log(el); // First <p class="text">Hello</p>
+</script> */}
+
+{/* <p class="text">Hello</p>
+<p class="text">World</p>
+<script>
+  let els = document.querySelectorAll(".text");
+  console.log(els); // NodeList of both <p> elements
+</script> */}
+
+
+// let h1 = document.querySelectorAll("h1");
+// console.dir(h1);
+
+// let h1 = document.querySelector("h1");
+// h1.textContent = "Hello Ayush kaise ho";
+
+// let h1 = document.querySelector("h1");
+// console.dir(h1);
+// let h1 = document.querySelector("h1");
+// h1.innerHTML = "ayush gurjar is a rich guy"
+
+// let h1 = document.querySelector("h1");
+// h1.innerHTML = "<i>ayush</i>";
+
+// let a = document.querySelector("a");
+// console.dir(a);
+
+let a = document.querySelector("a");
+a.href = "https://www.google.com";
+
+
+50 lpa plus in tech job with in 2 year
+100 coror net worth by 25 
