@@ -965,12 +965,12 @@ gf
 // console.log(obj.address.city); // Output: Delhi (also changes)
 
 
-let obj = {
-  name: "Ayush",
-  address: {
-    city: "Jaipur"
-  }
-};
+// let obj = {
+//   name: "Ayush",
+//   address: {
+//     city: "Jaipur"
+//   }
+// };
 
 // Deep copy using structuredClone (modern method)
 let deepCopy = structuredClone(obj);
