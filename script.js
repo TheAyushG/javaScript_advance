@@ -1035,9 +1035,30 @@ console.dir(abcd);
 // let a = document.querySelector("a");
 // console.dir(a);
 
-let a = document.querySelector("a");
-a.href = "https://www.google.com";
+// let a = document.querySelector("a");
+// a.href = "https://www.google.com";
 
 
 // 50 lpa plus in tech job with in 2 year
-// 100 coror net worth by 25 
+// 100 coror net worth by 25 by doing startup
+
+// let a = document.querySelector("a");
+// a.removeAttribute("href");
+
+// let h1 = document.createElement("h1");
+// h1.textContent = "I am a Student";
+// document.body.prepend(h1);
+// document.body.append(h1);
+
+// let h1 = document.querySelector("h1");
+// h1.remove(h1);
+
+// let h1 = document.createElement("h1");
+// h1.textContent = "I have created a AI bot";
+// let h = document.querySelector("div");
+// h.prepend(h1); 
+
+let h1 = document.createElement("h1");
+h1.textContent = "I am amazing";
+document.querySelector("div").prepend(h1);
+// document.querySelector("div").append(h1);
