@@ -18,7 +18,7 @@
 //  console.log(x);
 // }
 // console.log(x);
-
+// gf
 
 // console.log(count);
 // var count = 42;
@@ -989,8 +989,8 @@
 // let abcd = document.querySelector("h1");
 // console.dir(abcd);
 
-let abcd = document.querySelectorAll("h1");
-console.dir(abcd);
+// let abcd = document.querySelectorAll("h1");
+// console.dir(abcd);
 
 
 
@@ -1058,7 +1058,23 @@ console.dir(abcd);
 // let h = document.querySelector("div");
 // h.prepend(h1); 
 
-let h1 = document.createElement("h1");
-h1.textContent = "I am amazing";
-document.querySelector("div").prepend(h1);
+// let h1 = document.createElement("h1");
+// h1.textContent = "I am amazing";
+// document.querySelector("div").prepend(h1);
 // document.querySelector("div").append(h1);
+
+// let h1 = document.querySelector("h1");
+// h1.style.color = "red";
+// h1.style.backgroundColor = "blue";
+// h1.style.fontFamily = "Arial";
+// h1.style.textTransform = "capitalize";
+
+// let h1 = document.querySelector("h1");
+// console.dir(h1);
+
+// let h1 = document.querySelector("h1");
+// h1.classList.toggle("himi");
+
+
+let cl = document.getElementsByClassName("color");
+console.log(cl);
