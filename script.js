@@ -1076,5 +1076,30 @@
 // h1.classList.toggle("himi");
 
 
-let cl = document.getElementsByClassName("color");
-console.log(cl);
+// let cl = document.getElementsByClassName("color");
+// console.log(cl);
+
+// let buynow = document.querySelectorAll(".buy-now");
+// console.log(buynow);
+
+// let heading = document.querySelector("#heading");
+// heading.textContent = "welcome to this website";
+
+// //HTML 
+// <h1 class="heading">some important information</h1> 
+
+// //javascript 
+// let heading = document.querySelector("#heading");
+// heading.textContent = "welcome to this website";
+
+// let lis = document.querySelectorAll("li");
+// lis.forEach(function(val){
+//   console.log(val.textContent);
+// });
+
+// let p = document.querySelector("p");
+// p.innerHTML = "<b> Update </b> by javascript";
+
+let img = document.querySelector("img");
+//console.log(img.src);
+console.log(img.getAttribute("src"));
