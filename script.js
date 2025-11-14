@@ -1100,6 +1100,121 @@
 // let p = document.querySelector("p");
 // p.innerHTML = "<b> Update </b> by javascript";
 
-let img = document.querySelector("img");
-//console.log(img.src);
-console.log(img.getAttribute("src"));
+// let img = document.querySelector("img");
+// //console.log(img.src);
+// console.log(img.getAttribute("src"));
+
+// document
+//   .querySelector("img")
+//   .setAttribute(
+//     "src",
+//     "https://images.unsplash.com/photo-1762809675965-9c60ecb1d5d6?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8")
+
+// let a = document.querySelector("a");
+// a.href = "https://www.google.com";
+
+// let div = document.querySelector("div");
+// div.setAttribute("title", "Some info");
+
+// let btn = document.querySelector("button");
+// btn.removeAttribute("disabled");
+
+// let h1 = document.createElement("h1");
+// console.log(h1);
+
+// let h1 = document.createElement("h1");
+// h1.textContent = "I am a Student";
+// document.body.prepend(h1);
+// console.log(h1);
+
+// let watch = document.querySelector(".watch");
+// let h = document.querySelector("div").removeChild(watch);
+
+// let ul = document.querySelector("ul");
+// let li =document.createElement("li");
+// li.textContent = "New Item";
+// ul.appendChild(li);
+// console.log(ul);
+
+// Apple 1
+// Apple 2
+// Apple 3
+// Apple 4
+// New Task
+
+// let img = document.createElement("img");
+// img.setAttribute(
+//   "src",
+//   "https://images.unsplash.com/photo-1762809675965-9c60ecb1d5d6?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8");
+// img.classList.add("size");
+// document.querySelector("div").prepend(img);
+
+// let ul = document.querySelector("ul");
+// let li = document.querySelector("li");
+
+// ul.removeChild(li);
+
+// element.style.backgroundColor = "red";
+// element.style.backgroundColor = "red";
+
+// let li = document.querySelectorAll("ul li:nth-child(2n)");
+// li.forEach(function(val){
+//   val.classList.add("highlight");
+// })
+
+// let p = document.querySelectorAll("p");
+// p.forEach(function(val){
+//   val.style.fontSize = "38px";
+// })
+
+
+
+
+
+// let h1 = document.querySelector("h1");
+// h1.addEventListener("dblclick", function(){
+//   h1.style.color = "red";
+// });
+
+// function sayHello(){
+//   console.log("Hello Ayush!");
+// }
+
+// let btn = document.querySelector(".btn");
+// let remove = document.querySelector(".remove");
+
+// btn.addEventListener("click", sayHello);
+
+// remove.addEventListener("click", function(){
+//   btn.removeEventListener("click", sayHello);
+//   console.log("Event Listener removed");
+// })
+
+// let p = document.querySelector("p");
+// p.addEventListener("click", function(){
+//   p.style.color = "red";
+// })
+
+
+// let input = document.querySelector("input");
+// input.addEventListener("input", function(details){
+//   if(details.data !== null){
+//     console.log(details.data);
+//   }
+// })
+
+
+
+// let sel = document.querySelector("select");
+// let device = document.querySelector("#device");
+// sel.addEventListener("change", function(details){
+//   device.textContent = `${details.target.value} is selected`;
+//   console.log(details.target.value);
+// }) 
+
+let sel = document.querySelector("select");
+let device = document.querySelector("#device");
+sel.addEventListener("change", function(details){
+  device.textContent = `${details.target.value} is selected`;
+  console.log(details.target.value);
+})
